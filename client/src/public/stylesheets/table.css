@@ -1,0 +1,30 @@
+.table {
+	border-collapse: collapse;
+
+	.table__sortable {
+		cursor: pointer;
+		user-select: none;
+	}
+
+	tbody {
+		tr:nth-child(2n) {
+			background-color: var(--color-hover);
+		}
+	}
+	th,
+	td {
+		border: 1px solid color-mix(in srgb, var(--font-color) 35%, transparent);
+		padding: 0.4rem 0.5rem;
+	}
+	td:has(.input__checkbox) {
+		text-align: center;
+	}
+	.input__checkbox input {
+		height: 1.5rem;
+		width: 3rem;
+
+		&::after {
+			font-size: 1.25rem;
+		}
+	}
+}

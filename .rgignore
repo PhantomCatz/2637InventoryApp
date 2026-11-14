@@ -1,0 +1,5 @@
+# Ignore files when searching
+!.env
+!*.bak
+
+**/public/images

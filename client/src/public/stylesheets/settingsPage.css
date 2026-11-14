@@ -1,0 +1,34 @@
+settings-page {
+	input[type="color"] {
+		margin: 0.4rem;
+	}
+	label {
+		font-size: 1.2rem;
+	}
+	.fetchDataButton,
+	.clearDataButton {
+		width: 30%;
+		border: 1px solid color-mix(in srgb, var(--font-color) 45%, transparent);
+		background-color: var(--background-color);
+		border-radius: 4px;
+		text-align: center;
+		margin-top: 0.5rem;
+		padding: 0.5rem 1rem;
+	}
+	.updateTime {
+		margin-left: 2rem;
+		margin-top: 0.5rem;
+
+		.updateTime__title {
+			display: inline-block;
+			margin: auto;
+			margin-right: 1rem;
+			font-size: 1.5rem;
+		}
+		.updateTime__timestamp {
+			display: inline-block;
+			font-size: 1rem;
+			margin: auto;
+		}
+	}
+}

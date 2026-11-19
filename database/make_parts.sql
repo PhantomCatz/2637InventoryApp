@@ -1,4 +1,4 @@
-USE testdb;
+USE invtestdb;
 
 DROP TABLE IF EXISTS parts;
 

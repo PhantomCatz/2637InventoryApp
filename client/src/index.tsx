@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { Login } from "./parts/Login";
 import PartCreate from "./routes/partCreate";
 import { HashRouter, Navigate, Outlet, Routes, Route } from "react-router-dom";
+import HomeRouter from "./routes/homeRouter";
 
 const rootElement = document.getElementById("root") as HTMLElement;
 const root = ReactDOM.createRoot(rootElement);
@@ -48,7 +49,7 @@ function App(): React.ReactElement {
 			<Routes>
 				<Route path="/login" element={<Login />} />
 				<Route element={<RequireAuth />}>
-					<Route path="/" />
+					<Route path="/" element={<HomeRouter title="Home Router"/>} />
 					{/*
 						TODO /partlookup: mount PartLookupPage. It calls searchParts() and getPartFilterOptions().
 						TODO /part/:partID: mount PartPage. It calls getPart().
